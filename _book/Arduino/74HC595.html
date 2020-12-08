@@ -1,0 +1,385 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>74HC595 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../前端/" />
+    
+    
+    <link rel="prev" href="数码管.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">目录</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Arduino
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="汇总.html">
+            
+                <a href="汇总.html">
+            
+                    
+                    汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="点阵屏.html">
+            
+                <a href="点阵屏.html">
+            
+                    
+                    点阵屏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="数码管.html">
+            
+                <a href="数码管.html">
+            
+                    
+                    数码管
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="74HC595.html">
+            
+                <a href="74HC595.html">
+            
+                    
+                    74HC595
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../前端/">
+            
+                <a href="../前端/">
+            
+                    
+                    前端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../前端/jQuery/">
+            
+                <a href="../前端/jQuery/">
+            
+                    
+                    jQuery
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../前端/jQuery/语法.html">
+            
+                <a href="../前端/jQuery/语法.html">
+            
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >74HC595</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="74hc595&#x82AF;&#x7247;&#x539F;&#x7406;&#x53CA;&#x4F7F;&#x7528;&#x5B9E;&#x4F8B;">74HC595&#x82AF;&#x7247;&#x539F;&#x7406;&#x53CA;&#x4F7F;&#x7528;&#x5B9E;&#x4F8B;</h1>
+<p><a href="https://arduino.nxez.com/2016/12/20/74hc595-chip-principle-and-arduino-use-example.html" target="_blank">https://arduino.nxez.com/2016/12/20/74hc595-chip-principle-and-arduino-use-example.html</a></p>
+<p><a href="https://www.arduino.cc/en/Tutorial/Foundations/ShiftOut" target="_blank">https://www.arduino.cc/en/Tutorial/Foundations/ShiftOut</a></p>
+<p><a href="https://mc.dfrobot.com.cn/thread-10940-1-1.html" target="_blank">https://mc.dfrobot.com.cn/thread-10940-1-1.html</a></p>
+<p><a href="https://wiki.dfrobot.com.cn/ShiftOut__" target="_blank">https://wiki.dfrobot.com.cn/ShiftOut__</a></p>
+<hr>
+<p><img src="https://arduino.nxez.com/wp-content/uploads/2016/12/74hc595.jpg" alt="74HC595&#x56FE;&#x7247;"></p>
+<p>74HC595 &#x7B80;&#x5355;&#x8BF4;&#x6765;&#x5C31;&#x662F;&#x5177;&#x6709;8&#x4F4D;&#x79FB;&#x4F4D;&#x5BC4;&#x5B58;&#x5668;&#x548C;&#x4E00;&#x4E2A;&#x5B58;&#x50A8;&#x5668;&#xFF0C;&#x4EE5;&#x53CA;&#x4E09;&#x6001;&#x8F93;&#x51FA;&#x529F;&#x80FD;&#x3002; &#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x7528;&#x5B83;&#x6765;&#x63A7;&#x5236;8&#x4E2A;LED&#x5C0F;&#x706F;&#x3002;&#x6211;&#x4EEC;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x7528;74HC595&#x6765;&#x63A7;&#x5236;&#x5C0F;&#x706F;&#x5462;&#xFF1F;&#x4E00;&#x5B9A;&#x4F1A;&#x6709;&#x5F88;&#x591A;&#x670B;&#x53CB;&#x4F1A;&#x95EE;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x60F3;&#x95EE;&#x7684;&#x662F;&#x6211;&#x4EEC;&#x8981;&#x662F;&#x5355;&#x7EAF;&#x7684;&#x7528;Arduino&#x63A7;&#x5236;8&#x4E2A;&#x5C0F;&#x706F;&#x7684;&#x8BDD;&#x8981;&#x5360;&#x7528;&#x591A;&#x5C11;&#x4E2A;I/O&#x5462;&#xFF1F;&#x7B54;&#x6848;&#x662F;8&#x4E2A;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x7684;Arduino 168&#x6709;&#x51E0;&#x4E2A;I/O&#x53E3;&#x5462;&#xFF1F;&#x52A0;&#x4E0A;&#x6A21;&#x62DF;&#x63A5;&#x53E3;&#x4E5F;&#x5C31;20&#x4E2A;&#x5427;&#xFF0C;&#x8FD9;8&#x4E2A;&#x5C0F;&#x706F;&#x5360;&#x7528;&#x4E86;&#x592A;&#x591A;&#x7684;&#x8D44;&#x6E90;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x7528;74HC595&#x7684;&#x76EE;&#x7684;&#x5C31;&#x662F;&#x51CF;&#x5C11;I/O&#x53E3;&#x7684;&#x4F7F;&#x7528;&#x6570;&#x91CF;&#x3002;&#x7528;74HC595&#x4EE5;&#x540E;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;3&#x4E2A;&#x6570;&#x5B57;I/O&#x53E3;&#x63A7;&#x5236;8&#x4E2A;LED&#x5C0F;&#x706F;&#x3002;</p>
+<blockquote>
+<p>&#x5BC4;&#x5B58;&#x5668;
+&#x6709;&#x5929;&#x4E0B;&#x73ED;&#x56DE;&#x5BB6;&#xFF0C;&#x4F60;&#x8001;&#x5A46;&#x53EB;&#x4F60;&#x5230;&#x8D85;&#x5E02;&#x4E70;&#x83DC;&#x56DE;&#x5BB6;&#x505A;&#x996D;&#xFF0C;&#x4F60;&#x968F;&#x8EAB;&#x643A;&#x5E26;&#x4E86;&#x7535;&#x8111;&#xFF0C;&#x6587;&#x4EF6;&#x888B;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x5176;&#x4ED6;&#x4E1C;&#x897F;&#x3002;&#x6B63;&#x597D;&#x8D85;&#x5E02;&#x6709;&#x81EA;&#x52A9;&#x514D;&#x8D39;&#x5B58;&#x653E;&#x7269;&#x54C1;&#x7684;&#x5BC6;&#x7801;&#x67DC;&#xFF0C;&#x4F60;&#x628A;&#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x4F60;&#x968F;&#x8EAB;&#x643A;&#x5E26;&#x7684;&#x7269;&#x54C1;&#x5B58;&#x653E;&#x5728;&#x90A3;&#x4E2A;&#x67DC;&#x5B50;&#x91CC;&#xFF0C;&#x4E70;&#x5B8C;&#x83DC;&#x7ED3;&#x8D26;&#x51FA;&#x6765;&#x8BC4;&#x5BC6;&#x7801;&#x53D6;&#x8D70;&#x3002;&#x90A3;&#x4E2A;&#x65B9;&#x4FBF;&#x987E;&#x5BA2;&#x6765;&#x8D85;&#x5E02;&#x4E70;&#x4E1C;&#x897F;&#x65F6;&#x4E34;&#x65F6;&#x5B58;&#x653E;&#x7269;&#x54C1;&#x7684;&#x67DC;&#x5B50;&#xFF0C;&#x5C31;&#x76F8;&#x5F53;&#x4E8E;&#x5BC4;&#x5B58;&#x5668;&#xFF0C;&#x4E34;&#x65F6;&#x5B58;&#x653E;&#x4E00;&#x4E0B;&#xFF0C;&#x7B49;&#x4F1A;&#x8981;&#x53D6;&#x8D70;&#x7684;&#x3002;</p>
+<p>&#x50A8;&#x5B58;&#x5668;
+&#x5B58;&#x50A8;&#x5668;&#x5C31;&#x662F;&#x7528;&#x6765;&#x5B58;&#x653E;&#x6570;&#x636E;&#x7684;&#x5730;&#x65B9;&#x3002;&#x5B83;&#x662F;&#x5229;&#x7528;&#x7535;&#x5E73;&#x7684;&#x9AD8;&#x4F4E;&#x6765;&#x5B58;&#x653E;&#x6570;&#x636E;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5B83;&#x5B58;&#x653E;&#x7684;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x7535;&#x5E73;&#x7684;&#x9AD8;&#x3001;&#x4F4E;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x6240;&#x4E60;&#x60EF;&#x8BA4;&#x4E3A;&#x7684;1234&#x8FD9;&#x6837;&#x7684;&#x6570;&#x5B57;&#x3002;</p>
+</blockquote>
+<p><img src="https://arduino.nxez.com/wp-content/uploads/2016/12/20161220125501711-0.jpg" alt="img"></p>
+<p>&#x5206;&#x522B;&#x89E3;&#x91CA;&#x4E00;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>GND&#x63A5;&#x5730;&#xFF0C;VCC&#x63A5;5V&#x7535;&#x6E90;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C31;&#x4E0D;&#x7528;&#x8BF4;&#x4E86;&#x3002;</li>
+<li>Q0-Q7&#x8FD9;8&#x6839;&#x5F15;&#x811A;&#x662F;&#x82AF;&#x7247;&#x7684;&#x8F93;&#x51FA;&#x5F15;&#x811A;&#xFF0C;&#x76F4;&#x63A5;&#x8DDF;&#x6570;&#x7801;&#x7BA1;&#x7684;8&#x6BB5;&#x5F15;&#x811A;&#x76F8;&#x8FDE;&#x3002;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;&#x8981;&#x770B;&#x4F60;&#x600E;&#x4E48;&#x63A5;&#x7EBF;&#x548C;&#x5199;&#x4EE3;&#x7801;&#x65F6;&#x4F20;&#x9001;&#x6570;&#x636E;&#x7684;&#x987A;&#x5E8F;&#x4E86;&#x3002;</li>
+<li>DS&#x662F;&#x4E32;&#x884C;&#x8F93;&#x5165;&#x5F15;&#x811A;&#xFF0C;&#x6240;&#x8C13;&#x4E32;&#x884C;&#x5C31;&#x662F;&#x4F7F;&#x6570;&#x636E;&#x5728;&#x4E00;&#x6839;&#x4FE1;&#x53F7;&#x7EBF;&#x4E0A;&#x6309;&#x987A;&#x5E8F;&#x4E00;&#x4F4D;&#x4E00;&#x4F4D;&#x5730;&#x4F20;&#x8F93;&#xFF0C;&#x5C31;&#x50CF;&#x4E00;&#x4E32;&#x7CD6;&#x846B;&#x82A6;&#x3002;&#x8FD9;&#x4E2A;&#x5F15;&#x811A;&#x6211;&#x4EEC;&#x63A5;&#x5230;&#x6811;&#x8393;&#x6D3E;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;GPIO&#x53E3;&#x4E0A;&#xFF08;&#x8F93;&#x51FA;&#x6A21;&#x5F0F;&#xFF09;&#x3002;</li>
+<li>SHCP&#x662F;&#x79FB;&#x4F4D;&#x5BC4;&#x5B58;&#x5668;&#x7684;&#x65F6;&#x949F;&#x5F15;&#x811A;&#x3002;&#x542C;&#x4E0A;&#x53BB;&#x6709;&#x70B9;&#x590D;&#x6742;&#xFF0C;&#x5176;&#x5B9E;&#x5F88;&#x7B80;&#x5355;&#x3002;74HC595&#x5185;&#x90E8;&#x6709;&#x4E00;&#x4E2A;8&#x4F4D;&#x7684;&#x79FB;&#x4F4D;&#x5BC4;&#x5B58;&#x5668;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x4ECE;DS&#x5F15;&#x811A;&#x8F93;&#x5165;&#x7684;&#x6570;&#x636E;&#x3002;&#x90A3;&#x4E48;74HC595&#x600E;&#x4E48;&#x77E5;&#x9053;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x8BE5;&#x4ECE;DS&#x5F15;&#x811A;&#x4E0A;&#x53D6;&#x6570;&#x636E;&#x4E86;&#x5462;&#xFF1F;&#x6B63;&#x662F;&#x901A;&#x8FC7;SHCP&#x8FD9;&#x4E2A;&#x65F6;&#x949F;&#x5F15;&#x811A;&#x6765;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x53EA;&#x6709;&#x5728;SHCP&#x53D1;&#x751F;&#x4E00;&#x6B21;<em>&#x4E0A;&#x5347;&#x6CBF;</em>&#x7684;&#x65F6;&#x5019;&#xFF0C;74HC595&#x624D;&#x4F1A;&#x4ECE;DS&#x5F15;&#x811A;&#x4E0A;&#x53D6;&#x5F97;&#x5F53;&#x524D;&#x7684;&#x6570;&#x636E;&#xFF08;&#x9AD8;/&#x4F4E;&#x7535;&#x5E73;&#xFF09;&#x5E76;&#x628A;&#x53D6;&#x5230;&#x7684;&#x8FD9;&#x4E00;&#x4F4D;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x5230;&#x79FB;&#x4F4D;&#x5BC4;&#x5B58;&#x5668;&#x91CC;&#x3002;&#x540C;&#x6837;&#x7684;&#xFF0C;&#x8FD9;&#x4E2A;&#x5F15;&#x811A;&#x4E5F;&#x63A5;&#x5230;&#x6811;&#x8393;&#x6D3E;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;GPIO&#x53E3;&#x4E0A;&#x3002;&#x5F53;&#x6211;&#x4EEC;&#x5411;&#x82AF;&#x7247;&#x53D1;&#x9001;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x8981;&#x5148;&#x5728;DS&#x5F15;&#x811A;&#x4E0A;&#x51C6;&#x5907;&#x597D;&#x8981;&#x4F20;&#x9001;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x5236;&#x9020;&#x4E00;&#x6B21;SHCP&#x5F15;&#x811A;&#x7684;&#x4E0A;&#x5347;&#x6CBF;&#xFF08;&#x5148;&#x62C9;&#x4F4E;&#x7535;&#x5E73;&#x518D;&#x62C9;&#x9AD8;&#x7535;&#x5E73;&#xFF09;&#xFF0C;74HC595&#x4F1A;&#x5728;&#x8FD9;&#x4E2A;&#x4E0A;&#x5347;&#x6CBF;&#x5C06;DS&#x5F15;&#x811A;&#x4E0A;&#x7684;&#x6570;&#x636E;&#x5B58;&#x5165;&#x79FB;&#x4F4D;&#x5BC4;&#x5B58;&#x5668;D0&#xFF0C;&#x540C;&#x65F6;D0&#x539F;&#x6765;&#x7684;&#x6570;&#x636E;&#x4F1A;&#x987A;&#x79FB;&#x5230;D1&#xFF0C;D1&#x7684;&#x6570;&#x636E;&#x4F4D;&#x79FB;&#x5230;D2&#x3002;&#x3002;&#x3002;D6&#x7684;&#x6570;&#x636E;&#x4F4D;&#x79FB;&#x5230;D7&#x3002;&#x800C;&#x539F;&#x5148;D7&#x7684;&#x6570;&#x636E;&#x5DF2;&#x7ECF;&#x6CA1;&#x6709;&#x5730;&#x65B9;&#x50A8;&#x5B58;&#x4E86;&#xFF0C;&#x8FD9;&#x4E00;&#x4F4D;&#x6570;&#x636E;&#x4F1A;&#x88AB;&#x8F93;&#x51FA;&#x5230;&#x5F15;&#x811A;Q7S&#x4E0A;&#x3002;&#x8FD9;&#x4E2A;&#x5F15;&#x811A;&#x7684;&#x4F5C;&#x7528;&#x6211;&#x4EEC;&#x4E0B;&#x4E00;&#x7BC7;&#x518D;&#x8BF4;&#xFF0C;&#x672C;&#x6587;&#x6682;&#x65F6;&#x7528;&#x4E0D;&#x5230;&#x8FD9;&#x4E2A;&#x5F15;&#x811A;&#x3002;&#xFF08;&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x8BF4;&#x7684;&#x4E0D;&#x662F;&#x8F93;&#x51FA;&#x5F15;&#x811A;Q0-Q7&#xFF0C;&#x800C;&#x662F;&#x6307;&#x5185;&#x90E8;&#x7684;8&#x4F4D;&#x79FB;&#x4F4D;&#x5BC4;&#x5B58;&#x5668;&#x91CC;&#x6BCF;&#x4E00;&#x4E2A;&#x201C;&#x5C0F;&#x623F;&#x95F4;&#x201D;&#xFF0C;&#x82AF;&#x7247;&#x624B;&#x518C;&#x4E0A;&#x5E76;&#x6CA1;&#x6709;&#x7ED9;&#x8FD9;&#x4E9B;&#x5C0F;&#x623F;&#x95F4;&#x7F16;&#x53F7;&#xFF0C;&#x8FD9;&#x91CC;&#x4E3A;&#x4E86;&#x8BF4;&#x660E;&#x65B9;&#x4FBF;&#x8FDB;&#x884C;&#x4E86;&#x7F16;&#x53F7;&#xFF09;</li>
+<li>STCP&#x662F;&#x82AF;&#x7247;&#x5185;&#x90E8;&#x53E6;&#x5916;&#x4E00;&#x4E2A;8&#x4F4D;&#x9501;&#x5B58;&#x5BC4;&#x5B58;&#x5668;&#x7684;&#x65F6;&#x949F;&#x5F15;&#x811A;&#x3002;&#x5F53;&#x79FB;&#x4F4D;&#x5BC4;&#x5B58;&#x5668;&#x7684;8&#x4F4D;&#x6570;&#x636E;&#x5168;&#x90E8;&#x4F20;&#x8F93;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x5236;&#x9020;&#x4E00;&#x6B21;&#x9501;&#x5B58;&#x5668;&#x65F6;&#x949F;&#x5F15;&#x811A;&#x7684;&#x4E0A;&#x5347;&#x6CBF;&#xFF08;&#x5148;&#x62C9;&#x4F4E;&#x7535;&#x5E73;&#x518D;&#x62C9;&#x9AD8;&#x7535;&#x5E73;&#xFF09;&#x3002;74HC595&#x4F1A;&#x5728;&#x8FD9;&#x4E2A;&#x4E0A;&#x5347;&#x6CBF;&#x5C06;&#x79FB;&#x4F4D;&#x5BC4;&#x5B58;&#x5668;&#x91CC;&#x7684;8&#x4F4D;&#x6570;&#x636E;&#x590D;&#x5236;&#x5230;&#x9501;&#x5B58;&#x5668;&#x4E2D;&#xFF08;&#x9501;&#x5B58;&#x5668;&#x91CC;&#x539F;&#x6765;&#x7684;&#x6570;&#x636E;&#x5C06;&#x88AB;&#x66FF;&#x6362;&#xFF09;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x5230;&#x8FD9;&#x91CC;&#x4E3A;&#x6B62;&#xFF0C;&#x8FD9;8&#x4F4D;&#x6570;&#x636E;&#x8FD8;&#x53EA;&#x662F;&#x88AB;&#x4FDD;&#x5B58;&#x5728;&#x9501;&#x5B58;&#x5668;&#x91CC;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x8F93;&#x51FA;&#x5230;&#x6570;&#x7801;&#x7BA1;&#x4E0A;&#x3002;&#x8FD9;&#x4E2A;&#x5F15;&#x811A;&#x540C;&#x6837;&#x8FDE;&#x63A5;&#x5230;&#x6811;&#x8393;&#x6D3E;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;GPIO&#x53E3;&#x4E0A;&#x5373;&#x53EF;&#x3002;</li>
+<li>OE&#x662F;&#x8F93;&#x51FA;&#x4F7F;&#x80FD;&#x5F15;&#x811A;&#xFF0C;&#x5728;&#x5176;&#x4ED6;&#x82AF;&#x7247;&#x91CC;&#x4E5F;&#x5F88;&#x5E38;&#x89C1;&#x3002;&#x4F5C;&#x7528;&#x662F;&#x63A7;&#x5236;&#x9501;&#x5B58;&#x5668;&#x91CC;&#x7684;&#x6570;&#x636E;&#x662F;&#x5426;&#x6700;&#x7EC8;&#x8F93;&#x51FA;&#x5230;Q0-Q7&#x8F93;&#x51FA;&#x5F15;&#x811A;&#x4E0A;&#x3002;&#x4F4E;&#x7535;&#x5E73;&#x65F6;&#x8F93;&#x51FA;&#xFF0C;&#x9AD8;&#x7535;&#x5E73;&#x65F6;&#x4E0D;&#x8F93;&#x51FA;&#xFF08;&#x65E2;&#x4E0D;&#x662F;&#x9AD8;&#x7535;&#x5E73;&#xFF0C;&#x4E5F;&#x4E0D;&#x662F;&#x4F4E;&#x7535;&#x5E73;&#x800C;&#x662F;&#x9AD8;&#x963B;&#x6001;&#xFF0C;&#x4E0D;&#x901A;&#x7535;&#xFF09;&#x3002;&#x672C;&#x4F8B;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x76F4;&#x63A5;&#x63A5;&#x5728;GND&#x4E0A;&#x4F7F;&#x5176;&#x4E00;&#x76F4;&#x4FDD;&#x6301;&#x4F4E;&#x7535;&#x5E73;&#x8F93;&#x51FA;&#x6570;&#x636E;&#x3002;</li>
+<li>MR&#x662F;&#x7528;&#x6765;&#x91CD;&#x7F6E;&#x5185;&#x90E8;&#x5BC4;&#x5B58;&#x5668;&#x7684;&#x5F15;&#x811A;&#x3002;&#x4F4E;&#x7535;&#x5E73;&#x65F6;&#x91CD;&#x7F6E;&#x5185;&#x90E8;&#x5BC4;&#x5B58;&#x5668;(MemoryReset?)&#x3002;&#x672C;&#x4F8B;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x76F4;&#x63A5;&#x8FDE;&#x63A5;&#x5728;Vcc&#x4E0A;&#x4E00;&#x76F4;&#x4FDD;&#x6301;&#x9AD8;&#x7535;&#x5E73;&#x3002;</li>
+<li>Q7S&#x5F15;&#x811A;&#xFF0C;&#x4E32;&#x884C;&#x8F93;&#x51FA;&#x5F15;&#x811A;&#xFF0C;&#x672C;&#x6587;&#x4E0D;&#x4F7F;&#x7528;&#xFF0C;&#x4E0B;&#x4E00;&#x7BC7;&#x518D;&#x89E3;&#x91CA;&#x5B83;&#x7684;&#x4F5C;&#x7528;&#x3002;</li>
+<li>&#x5173;&#x4E8E;&#x9501;&#x5B58;&#x5668;&#x3002;&#x987E;&#x540D;&#x601D;&#x4E49;&#x5C31;&#x662F;&#x5C06;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x5E76;&#x9501;&#x5B9A;&#x3002;&#x4E00;&#x65E6;&#x8FDB;&#x5165;&#x4E86;&#x9501;&#x5B58;&#x5668;&#xFF0C;&#x9664;&#x975E;&#x65AD;&#x7535;&#x6216;&#x91CD;&#x7F6E;&#x6570;&#x636E;&#xFF08;MR&#x53E3;&#x8BBE;&#x7F6E;&#x4E3A;&#x4F4E;&#x7535;&#x5E73;&#xFF09;&#xFF0C;&#x9501;&#x5B58;&#x5668;&#x7684;&#x6570;&#x636E;&#x4E0D;&#x4F1A;&#x518D;&#x6539;&#x53D8;&#x3002;&#x597D;&#x5904;&#x662F;&#xFF0C;&#x5F53;&#x4F60;&#x9700;&#x8981;&#x66F4;&#x65B0;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x5C06;&#x6570;&#x636E;&#x4E32;&#x884C;&#x8F93;&#x5165;&#x79FB;&#x4F4D;&#x5BC4;&#x5B58;&#x5668;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x9501;&#x5B58;&#x5668;&#x91CC;&#x7684;&#x6570;&#x636E;&#x4E0D;&#x4F1A;&#x6709;&#x4EFB;&#x4F55;&#x5F71;&#x54CD;&#xFF0C;&#x4E5F;&#x5C31;&#x4E0D;&#x4F1A;&#x6709;&#x95EA;&#x70C1;&#x4E86;&#x3002;&#x4E00;&#x76F4;&#x5230;&#x79FB;&#x4F4D;&#x5BC4;&#x5B58;&#x5668;8&#x4F4D;&#x6570;&#x636E;&#x51C6;&#x5907;&#x5B8C;&#x6BD5;&#xFF0C;&#x518D;&#x5236;&#x9020;&#x4E00;&#x6B21;STCP&#x7684;&#x4E0A;&#x5347;&#x6CBF;&#x4E00;&#x6B21;&#x6027;&#x66F4;&#x65B0;&#x9501;&#x5B58;&#x5668;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x66F4;&#x65B0;&#x8F93;&#x51FA;&#x3002;</li>
+</ul>
+<p><img src="https://arduino.nxez.com/wp-content/uploads/2016/12/74hc595.gif" alt="img"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="数码管.html" class="navigation navigation-prev " aria-label="Previous page: 数码管">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../前端/" class="navigation navigation-next " aria-label="Next page: 前端">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"74HC595","level":"1.2.4","depth":2,"next":{"title":"前端","level":"1.3","depth":1,"path":"前端/README.md","ref":"前端/README.md","articles":[{"title":"jQuery","level":"1.3.1","depth":2,"path":"前端/jQuery/README.md","ref":"前端/jQuery/README.md","articles":[{"title":"语法","level":"1.3.1.1","depth":3,"path":"前端/jQuery/语法.md","ref":"前端/jQuery/语法.md","articles":[]}]}]},"previous":{"title":"数码管","level":"1.2.3","depth":2,"path":"Arduino/数码管.md","ref":"Arduino/数码管.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Arduino/74HC595.md","mtime":"2020-11-16T12:29:24.425Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-08T05:17:23.451Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
