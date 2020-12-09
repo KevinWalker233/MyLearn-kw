@@ -2,7 +2,6 @@
 
 ## 目录
 
-* [Introduction](README.md)
 * [Arduino](Arduino/README.md)
   * [汇总](Arduino/汇总.md)
   * [点阵屏](Arduino/点阵屏.md)
